@@ -1,5 +1,8 @@
 ```javascript
-const NAME = `Дима`;
+const me = {
+  name: `Дима`,
+  education: [],
+};
 
 const init = () => {
   me.education.push(`ВГУ ФКН`);
