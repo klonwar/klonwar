@@ -1,14 +1,18 @@
-```javascript
+```typescript
 const me = {
   name: `Дима`,
-  education: [],
+  education: {
+    bachelor: `ВГУ ФКН`,
+    master: `ВГЛТУ`
+  },
 };
 
 const init = () => {
-  me.education.push(`ВГУ ФКН`);
-  me.favorite = [`JS`, `TS`];
-  
-  // Get more
+  me.languages = [`JS`, `TS`];
+  me.expertise = [`React`, `Angular`, `NestJS`, `NextJS`]
+  me.experience = [`Aviasales`, `DSR`, `Freelance`]
+
+  // @TODO: Get more info about me
   return () => fetch(`https://klonwar.github.io/`); 
 }
 ```
